@@ -1,0 +1,342 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    font-family: monospace;
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+/* Brand Styling */
+.brand-title p {
+    font-size: 23px;
+    font-family: 'Audiowide', cursive;
+}
+
+.brand-title p.active {
+    color: #db3131;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.brand-title p a {
+    margin-top: -20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-links li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    padding: 1rem;
+    font-size: 17px;
+}
+
+.navbar-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #db3131;
+    transform: width .3s;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/* Home page styling */
+.home {
+    height: 410px;
+}
+
+.home h2,
+h3,
+p {
+    font-family: monospace;
+    color: #fff;
+}
+
+.home h2 {
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 230px;
+}
+
+.home p {
+    font-size: 25px;
+    margin-left: 130px;
+}
+
+.home h3 {
+    font-size: 25px;
+    margin-left: 130px;
+}
+
+.home .myWork button {
+    margin-left: 130px;
+    margin-top: 50px;
+    background-color: #db3131;
+    color: #fff;
+    padding: 12px 12px;
+    border-radius: 20px;
+    font-size: 19px;
+    border: 2px solid #db3131;
+}
+
+.myWork button:hover {
+    background-color: inherit;
+    color: #fff;
+    border: 2px solid #db3131;
+    cursor: pointer;
+}
+/* About page styling */
+ #about {
+    height: 640px;
+    background-color: #191919;
+}
+
+.dot1 img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-top: 80px;
+}
+
+.heading h2 {
+    margin-top: 100px;
+    font-size: 70px;
+    color: #484848;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+
+.card-container {
+    width: 300px;
+    height: 460px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -120px;
+    box-shadow: 0px 1px 10px 1px #191919;
+    /* box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6; */
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}
+
+.upper-container {
+    height: 150px;
+    background-color: #db3131; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.upper-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 70px;
+    border: 2px solid #fff
+}
+
+.lower-container {
+    height: 280px;
+}
+
+.lower-container h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.lower-container h3 {
+    text-align: center;
+    color: #191919;
+}
+
+.lower-container p {
+    color: #191919;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.lower-container img {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/* Projects Page styling */
+#projects {
+    height: 300px;
+    background-color: #141414;
+}
+
+.projectlabel h2 {
+    margin-top: 120px;
+    font-size: 60px;
+    color: #484848;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+
+ .dot2 img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-top: -190px;
+}
+.projectlabel h3 {
+    font-size: 18px;
+    margin-left: 100px;
+    color: #fff;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+.projectlabel p a {
+    background-color: #fff;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    border: 3px solid #fff;
+    color: #141414;
+}
+/* Blogs page styling */
+#blogs {
+    height: 100px;
+}
+.blogs h1 {
+    font-size: 60px;
+    color: #484848;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+.blogs p {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 40px;
+    font-family: 'Audiowide', cursive;
+}
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #db3131;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* Responsiveness */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        float: right;
+    }
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    #about {
+        height: 670px;
+    }
+    #about .heading h2 {
+        margin-top: 50px;
+    }
+    #about .card-container {
+        margin-top: -80px;
+        margin-left: 28%;
+    }
+    #projects .projectlabel p a {
+        margin-right: -1px;
+    }
+}
